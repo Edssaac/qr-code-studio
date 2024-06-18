@@ -9,19 +9,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="src/css/style.css">
+    <script src="src/js/main.js" defer></script>
 
-    <link rel="shortcut icon" href="img/qr-code.png" type="image/x-icon">
-    <title>Leitor de QR Code</title>
+    <link rel="shortcut icon" href="src/img/qr-code.png" type="image/x-icon">
+    <title>QR Code Studio</title>
 </head>
 
 <body>
+    <div class="wrapper" id="generator">
+        <header>
+            <h1>Gerador de QR Code</h1>
+            <p>Cole uma URL ou insira um texto para criar um QR Code</p>
+        </header>
 
-    <div class="wrapper">
-        <form action="#">
-            <input type="file" name="qr-code-file" placeholder="file" hidden>
-            <img src="img/qr-code.png" alt="qr-code">
+        <div class="form">
+            <textarea name="qr-code" id="qr-code-text" placeholder="Entre com uma mensagem ou uma URL"></textarea>
+            <button id="generate-button">Gerar QR Code</button>
+        </div>
+
+        <div class="qr-code">
+            <img id="generated-qr-code" src="" alt="qr-code">
+        </div>
+    </div>
+
+    <div class="wrapper" id="scanner">
+        <form id="qr-code-form" action="#">
+            <input type="file" name="qr-code-file" id="file-input" hidden>
+
+            <img src="src/img/qr-code.png" alt="qr-code">
+
             <div class="content">
                 <i class="fas fa-cloud-upload-alt"></i>
                 <p>Selecione um QR Code para leitura</p>
@@ -29,14 +46,14 @@
         </form>
 
         <div class="details">
-            <textarea title="qr-code-content" placeholder="" disabled></textarea>
+            <textarea id="qr-code-content" title="qr-code-content" disabled></textarea>
+
             <div class="buttons">
-                <button type="button" class="close">Fechar</button>
-                <button type="button" class="copy">Copiar</button>
+                <button id="close-button" type="button">Fechar</button>
+                <button id="copy-button" type="button">Copiar</button>
             </div>
         </div>
     </div>
-
 </body>
 
 </html>

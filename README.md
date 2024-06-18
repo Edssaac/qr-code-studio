@@ -8,7 +8,7 @@
 
 <div align="center">
  
- ![QR-Code-Scanner](https://raw.githubusercontent.com/Edssaac/qr-code-scanner/main/img/qr-code-app.png)
+ ![QR-Code-Scanner](https://raw.githubusercontent.com/Edssaac/qr-code-scanner/main/src/img/qr-code-app.png)
  
 </div>
 
