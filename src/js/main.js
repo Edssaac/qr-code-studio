@@ -36,7 +36,7 @@ const closeButton = document.getElementById('close-button');
 const fetchRequest = (formData, file) => {
     intoText.textContent = 'Lendo QR Code...';
 
-    fetch("http://api.qrserver.com/v1/read-qr-code/", {
+    fetch("https://api.qrserver.com/v1/read-qr-code/", {
         method: 'POST',
         body: formData
     })
