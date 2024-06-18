@@ -4,9 +4,9 @@
 
 **Descrição:**
 
-QR Code Studio é uma ferramenta completa para a criação e leitura de QR codes. Com esta aplicação, o usuário pode facilmente gerar imagens de 
-QR codes personalizadas e fazer o download das mesmas. Além disso, a ferramenta permite a leitura e decodificação de QR codes já existentes, 
-oferecendo uma solução prática e eficiente para todas as necessidades relacionadas a QR codes.
+QR Code Studio é uma ferramenta completa para a criação e leitura de QR Codes. Com esta aplicação, o usuário pode facilmente gerar imagens de 
+QR Codes personalizadas e fazer o download das mesmas. Além disso, a ferramenta permite a leitura e decodificação de QR Codes já existentes, 
+oferecendo uma solução prática e eficiente para todas as necessidades relacionadas a QR Codes.
 
 ![demo](https://raw.githubusercontent.com/Edssaac/qr-code-scanner/main/src/img/qr-code-app.png)
 
